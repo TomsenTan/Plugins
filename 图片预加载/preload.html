@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+<style>
+  body{position:relative;text-decoration: none;list-style: none;}
+  .showpic{position:absolute;height:550px;width:90%;margin-left:80px;background-color: black;}
+  .button-box{position: absolute;margin-top:560px;margin-left: 600px;z-index: 5;}
+  .preload{position: fixed;height: 100%;width:100%;top:0;background-color: white;display: none;}
+  img{position: absolute;margin-left: 30px;margin-top: 3px;}
+  button{height: 30px;width:80px;font-size: 10px;}
+</style>
+<script  src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+
+</head>
+<body>
+	<div class="showpic">
+		<img src="img/pexels-photo-297814.jpeg" id="img">
+	</div>
+	<div class="button-box">
+		<button type="button" value="前一张"  data-control="prev" class="button">前一张</button>
+		<button type="button" value="后一张"  data-control="next" class="button">后一张</button>
+	</div>
+	<div class="preload"></div>
+
+<script type="text/javascript" src="js/preload.js"></script>
+
+
+</body>
+</html>

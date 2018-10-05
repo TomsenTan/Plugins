@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title>回到顶部</title>
+<style  type="text/css">
+	body{background-color: #333333;background-attachment:scroll;}
+	
+	#btn{width:50px;height:50px;
+		position:fixed;right:65px;bottom:10px;
+		display:none;
+		background: url(images/回到顶部.png) no-repeat left top;
+	}
+	
+	#btn:hover{background : url(images/回到顶部1.png) no-repeat  left top;
+	}
+
+	#share{width:50px;height:50px;
+		  position:fixed;right:65px;bottom:65px;
+		  display:none;
+		  background: url(images/分享.png) no-repeat left top;
+
+	}
+
+	#share:hover{background : url(images/分享1.png) no-repeat  left top;}
+
+	#wechat{width:50px;height:50px;
+		  position:fixed;right:65px;bottom:120px;
+		  display:none;
+		  background: url(images/微信.png) no-repeat left top;
+
+	}
+	#wechat:hover{background : url(images/微信1.png) no-repeat  left top;}
+
+	.bg{width:1190px;margin:0 auto;}
+	
+	#showday{left:300px;top: 15px;
+		position:absolute;color: #000000;
+		font-size: 12px;font-family:amethysta;}
+	
+	#showtime{left:450px;top:15px;position:absolute;
+		color:darkgrey;}
+	
+	.time{right:300px;top:150px;position:absolute;
+		color:#D50508;
+		hieght:80px;
+	   font-size: 12px;
+	   font-stretch: expanded;}
+	
+</style>
+<script type="text/javascript"  src="js/回到顶部.js">
+		
+</script>
+
+</head>
+
+<body>
+	<a href="javascript:;" id="btn" title="回到顶部"></a>
+	<a href="javascript:;" id="share"  title="分享"></a>
+	<a href="javascript:;" id="wechat"  title="微信"></a>
+ 	<div class="bg">
+        <div id="showday"></div>
+	    <div id="showtime"></div>
+	    <div  class="time">还剩下:<span id="timeleft"></span></div>
+		<img src="images/tb_bg.jpg" alt="">
+		
+		
+	</div>
+	
+	
+</body>
+</html>

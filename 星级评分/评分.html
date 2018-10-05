@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>评分</title>
+<style>
+	*{list-style: none;text-decoration: none;}
+	body{font-size: 14px;color:grey;}
+	.rating-box{position:relative;width:60%;height: 120px;border:1px solid red;}
+	.rating-star-box{position:absolute;width:100px;height:80px;margin-top:15px;margin-left: 15px;border:0px solid #ccc;border-width:0 1px 0 0;text-align: center;}
+	.rating-tap-box{position:absolute;width:650px;height: 80px;left:130px;top:10px;}
+	.rating-tap-box ul li{float:left;}
+	.rating-tap{width:110px;height:20px;margin-left:8px;background-color: orange;border-radius: 5px;text-align:center;}
+
+</style>
+</head>
+<body>
+	<div class="rating-box" id="#">
+		<div class="rating-star-box">
+			<span>与描述相符</span>
+			<span style="font-size: 40px;color:orange;font-weight: 700;">4.8</span>
+			<div>星星</div>
+		</div>
+		<div class="rating-tap-box">
+		  		<ul id="rating-tap-list">
+		  			<li class="rating-tap"><span>质量很好（63）</span></li>
+		  			<li class="rating-tap"><span>款式很好（60）</span></li>
+		  			<li class="rating-tap"><span>鞋很舒服（22）</span></li>
+		  			<li class="rating-tap"><span>很便宜(19)</span></li>
+		  			<li class="rating-tap"><span>快递不错(13)</span></li>
+		  		</ul>
+		</div>  	
+
+		
+	</div>
+<script type="text/javascript">
+	window.onload = function(){
+		var spans = document.getElementsByTagName('span');
+		var lists = document.getElementsByTagName('li');
+		spans.onmouseenter=function(){
+			lists.style.border = '1px solid red';
+
+		}
+
+}
+</script>
+</body>
+</html>
